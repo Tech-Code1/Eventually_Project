@@ -126,21 +126,22 @@
           "
           (click)="logoInput.click()"
         >
-        <div *ngIf="images['logo']" class="img-preview">
-          <img
-            loading="lazy"
-            class="previsualizacion"
-            [src]="images['logo']"
+          <div *ngIf="images['logo']" class="img-preview">
+            <img
+              loading="lazy"
+              class="previsualizacion"
+              [src]="images['logo']"
+            />
+          </div>
+          <input
+            #logoInput
+            class="logo-input-community"
+            hidden
+            (change)="showImgPreview($event, 'logo')"
+            type="file"
           />
-        </div>
-        <input
-        #logoInput
-        hidden
-        (change)="showImgPreview($event, 'logo')"
-        type="file"
-      />
           <img
-           *ngIf="!images['logo']"
+            *ngIf="!images['logo']"
             src="../../../assets/svg/Avatar-decorator.svg"
             alt="Decoración plantilla avatar"
           />
@@ -159,7 +160,7 @@
         <div *ngIf="images['banner']" class="img-preview">
           <img
             loading="lazy"
-            class="previsualizacion"
+            class="previsualizacion-two"
             [src]="images['banner']"
           />
         </div>

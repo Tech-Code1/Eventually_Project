@@ -174,7 +174,11 @@
       />
     </label>
     <label for="" class="d-flex flex-column mt-3 style-title-login"
-      >Correo
+      >Correo<span
+        class="text-error"
+        *ngIf="submitted && userDetails.email.errors?.required"
+        >Por favor llenar este campo</span
+      >
       <input
         class="input-style-input"
         type="email"
@@ -210,7 +214,7 @@
       >Contraseña
       <input
         class="input-style-input"
-        type="text"
+        type="password"
         autocomplete="off"
         formControlName="pass"
       />
@@ -219,7 +223,7 @@
       >Repita la contraseña
       <input
         class="input-style-input"
-        type="email"
+        type="password"
         autocomplete="off"
         formControlName="passRepeat"
       />

@@ -30,7 +30,7 @@ export class RegisterComponent implements OnInit {
   multistep = new FormGroup ({
     userDetails: new FormGroup({
       nick: new FormControl("", Validators.required),
-      email: new FormControl("")
+      email: new FormControl("", Validators.required)
     }),
 
     userPass: new FormGroup({

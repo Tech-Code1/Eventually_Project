@@ -1,7 +1,7 @@
 <div class="login-container d-flex flex-column">
   <app-nav-auth></app-nav-auth>
 
-  <main class="d-flex flex-column section-login">
+  <section class="d-flex flex-column section-community">
     <div class="d-flex header-community flex-column position-relative">
       <div class="d-flex justify-content-center mt-5">
         <p class="header-title-principal">
@@ -64,10 +64,14 @@
         </a>
       </div>
     </div>
-    <section class="section-cards-new-comunity">
-      <app-new-community *ngFor="let comunity of comunities" [comunity]="comunity"></app-new-community>
+    <section class="d-flex section-cards-new-comunity flex-wrap">
+      <app-new-community
+        class="me-4 mb-4"
+        *ngFor="let comunity of comunities"
+        [comunity]="comunity"
+      ></app-new-community>
     </section>
-  </main>
+  </section>
 
-  <app-footer></app-footer>
+  <app-footer class="d-flex footer-style-section-community"></app-footer>
 </div>

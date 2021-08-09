@@ -13,6 +13,7 @@
   width: 224px;
   background: $color-gray-five;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .content-banner-community {
@@ -20,6 +21,7 @@
   background: $color-gray-five;
   border-radius: 5px;
   height: 224px;
+  cursor: pointer;
 }
 
 .title-logo {
@@ -27,4 +29,15 @@
   font-size: 16px;
   font-family: $title;
   font-weight: 700;
+}
+
+.previsualizacion {
+  height: 224px;
+  width: 224px;
+}
+
+.previsualizacion-two {
+  width: 937px;
+  height: 224px;
+  border-radius: 5px;
 }

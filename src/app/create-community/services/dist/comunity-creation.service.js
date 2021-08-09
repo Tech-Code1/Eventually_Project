@@ -47,7 +47,7 @@ var ComunityCreationService = /** @class */ (function () {
             logo: this.comunityCreationDTO.logo,
             banner: this.comunityCreationDTO.banner
         };
-        debugger;
+
         var formData = buildFormData_1.buildFormData(finalDTO);
         return this.httpClient.post(this.baseUrl + "api/comunities", formData);
     };

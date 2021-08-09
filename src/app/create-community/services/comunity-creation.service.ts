@@ -35,7 +35,7 @@ export class ComunityCreationService {
       logo: this.comunityCreationDTO.logo,
       banner: this.comunityCreationDTO.banner
     };
-    debugger
+
     let formData = buildFormData(finalDTO);
 
 
