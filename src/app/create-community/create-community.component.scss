@@ -1,0 +1,96 @@
+@import "../../assets/theme.scss";
+
+.container-plans-community {
+  height: 600px;
+  width: 400px;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.16);
+  background: $color-white-two;
+  padding: 16px 16px;
+}
+
+.main-content-plans {
+  height: 100vh;
+}
+
+.benefits-titles {
+  font-family: $content;
+  font-size: 16px;
+  color: $color-dark-one;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.color-title-plan-community-one,
+.color-title-plan-price-community-one {
+  color: $accent-color-two;
+}
+
+.color-button-plan-community-one {
+  background-color: $accent-color-two;
+}
+
+.color-button-plan-community-one:hover {
+  background: transparent;
+  border: 2px solid $accent-color-two;
+  color: $accent-color-two;
+}
+
+.color-title-plan-community-two,
+.color-title-plan-price-community-two {
+  color: $accent-color-ten;
+}
+
+.color-button-plan-community-two {
+  background: $accent-color-ten;
+}
+
+.color-button-plan-community-two:hover {
+  background: transparent;
+  border: 2px solid $accent-color-ten;
+  color: $accent-color-ten;
+}
+
+.color-title-plan-community-three,
+.color-title-plan-price-community-three {
+  color: $accent-color-four;
+}
+
+.color-button-plan-community-three {
+  background-color: $accent-color-four;
+}
+
+.color-button-plan-community-three:hover {
+  background: transparent;
+  border: 2px solid $accent-color-four;
+  color: $accent-color-four;
+}
+
+.color-title-plan-price-community-one,
+.color-title-plan-price-community-two,
+.color-title-plan-price-community-three {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: $title;
+}
+
+.color-title-plan-community-one,
+.color-title-plan-community-two,
+.color-title-plan-community-three {
+  font-size: 38px;
+  font-family: $title;
+  font-weight: bold;
+}
+
+.color-button-plan-community-one,
+.color-button-plan-community-two,
+.color-button-plan-community-three {
+ color: $color-white-two;
+ font-family: $title;
+ font-size: 16px;
+ font-weight: bold;
+ outline: none;
+ border-radius: 5px;
+ border: none;
+ height: 50px;
+ width: 123px;
+}

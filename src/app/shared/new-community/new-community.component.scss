@@ -1,0 +1,67 @@
+@import "../../../assets/theme.scss";
+
+.header-card-community {
+  height: 75px;
+  background: $color-dark-one;
+  width: 430px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.title-card-new-community {
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: $title;
+  color: $color-white-two;
+  margin: 0;
+}
+
+.body-card-community {
+  height: 193px;
+  width: 430px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.16);
+  background: $color-white-two;
+  padding: 8px 8px;
+}
+
+.subtitle-card-new-community {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: $title;
+  color: $color-dark-one;
+  margin: 0;
+}
+
+.decorate-card-new-community {
+  border: 1px dashed $color-dark-one;
+  height: 27px;
+  transform: rotate(180deg);
+}
+
+.content-subtitle-card-new-community {
+  margin-left: 32px;
+}
+
+.btn-visit-new-community {
+  border: none;
+  height: 40px;
+  background: $primary-color-two;
+  border-radius: 5px;
+  color: $color-white-two;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: $title;
+  width: 100%;
+}
+
+.btn-visit-new-community:hover {
+  background: $primary-color-one;
+}
+
+.parragraph-card-new-community {
+  font-size: 14px;
+  font-family: $content;
+  color: $color-dark-one;
+  font-weight: normal;
+}

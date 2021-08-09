@@ -1,0 +1,131 @@
+@import "../../../assets/theme.scss";
+@import "../login/login.component.scss";
+
+.btn-login{
+  color: $color-dark-one;
+  border-top-left-radius: 10px;
+  background: $color-white-two;
+}
+
+.btn-register{
+  color: $secondary-color-one;
+  border-top-right-radius: 10px;
+  background: $soft-color-orange;
+}
+
+.content-progress-information{
+  height: 107px;
+  width: 700px;
+  background: $color-white-two;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 0 16px;
+}
+
+.line-progress{
+  height: 3px;
+  width: 190px;
+  background: $color-dark-one;
+  margin-bottom: 32px;
+}
+
+.line-progress-sucess {
+  height: 3px;
+  width: 190px;
+  background: $primary-color-two;
+  margin-bottom: 32px;
+  transition: 0.5s;
+}
+
+.title-progress-register,
+.mini-title-progress-register {
+  font-family: $title;
+  font-weight: 600;
+}
+
+.title-progress-register {
+  font-size: 14px;
+  color: $color-dark-one;
+}
+
+.mini-title-progress-register {
+  font-size: 12px;
+  color: $color-white-two;
+}
+
+.content-mini-title-progress-register{
+  height: 16px;
+  width: 70px;
+  background: $secondary-color-one;
+  border-radius: 10px;
+}
+
+.content-mini-title-progress-register-two {
+  height: 16px;
+  width: 70px;
+  background: $primary-color-two;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.content-circle-progress-register {
+  border-radius: 50px;
+  border: 2px solid $secondary-color-one;
+  height: 48px;
+  width: 48px;
+  background: $color-white-two;
+}
+
+.content-circle-progress-register-sucess {
+  border-radius: 50px;
+  border: 2px solid $primary-color-two;
+  height: 48px;
+  width: 48px;
+  background: $soft-color-blue-two;
+  transition: 0.3s;
+}
+
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.content-interesting-area {
+  background: $soft-color-blue;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.text-error {
+  font-size: 14px;
+  color: $accent-color-eight;
+  font-family: $title;
+}
+
+.area-select-style {
+  font-size: 16px;
+  font-family: $title;
+  font-weight: 600;
+  height: auto;
+  width: max-content;
+  color: $primary-color-two;
+}
+
+.content-area-selected {
+ height: 50px;
+ cursor: pointer;
+ background-color: $soft-color-blue-two;
+ padding: 8px 8px;
+ border-radius: 5px;
+}
+
+.svg-close-input{
+  fill: $accent-color-eight;
+}
+
+.content-area-selected:hover .svg-close-input {
+  fill: $accent-color-nine;
+  width: 16px;
+  height: 16px;
+  transition: 0.5;
+}

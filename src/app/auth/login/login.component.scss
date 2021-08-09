@@ -1,0 +1,167 @@
+@import "../../../assets/theme.scss";
+
+.form-style {
+  width: 700px;
+  padding: 80px 16px 67px 16px;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 500px;
+  position: relative;
+  background: $color-white-two;
+}
+
+.btn-login,
+.btn-register {
+  width: 350px;
+  font-family: $title;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 80px;
+  cursor: pointer;
+  background: transparent;
+  z-index: 2;
+}
+
+.btn-login:hover {
+  background: $primary-color-two;
+  color: $color-white-two;
+}
+
+.btn-login{
+  color: $secondary-color-one;
+  border-top-left-radius: 10px;
+  background: $soft-color-orange;
+}
+
+.btn-register{
+  color: $color-dark-one;
+  border-top-right-radius: 10px;
+}
+
+.btn-register:hover {
+  background: $primary-color-two;
+  color: $color-white-two;
+}
+
+.content-btns-login {
+  left: 0;
+  top: 0;
+}
+
+.line-division {
+  height: 1px;
+  width: 100%;
+  background: $color-gray-trhee;
+  z-index: 2;
+}
+
+.line-division-two {
+  width: 2px;
+  height: 17px;
+  background: $color-dark-one;
+  z-index: 2;
+}
+
+.decorator-small {
+  height: 20px;
+  width: 20px;
+  background: $secondary-color-one;
+  z-index: 3;
+  border: 3px solid $color-white-two;
+  transform: rotate(45deg);
+}
+
+.content-decorator {
+  height: 80px;
+width: 100%;
+}
+
+.content-inputs-login{
+  height: 100%;
+}
+
+.btn-start-sesion,
+.btn-next,
+.btn-back {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: $title;
+  font-weight: bold;
+  height: 50px;
+}
+
+.btn-back {
+  border: 2px solid $accent-color-eight;
+  background: transparent;
+  color: $accent-color-eight;
+}
+
+.btn-back:hover {
+  color: $accent-color-nine;
+  border: 2px solid $accent-color-nine;
+}
+
+.btn-next{
+  padding: 0 16px;
+  background: $primary-color-two;
+  color: $color-white-two;
+}
+
+.btn-start-sesion {
+  width: 100%;
+}
+
+.btn-start-sesion:hover,
+.btn-next:hover {
+  background: $primary-color-one;
+}
+
+.input-style-input {
+  background: $soft-color-blue;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  outline: none;
+}
+
+.input-style-input:focus{
+  border-bottom: 3px solid #63A4FF;
+  border-radius: 0 0 5px 5px;
+}
+
+.style-title-login-two,
+.style-title-login {
+  font-family: $title;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.style-title-login-two {
+  color: $primary-color-one;
+  cursor: pointer;
+}
+
+.checkbox-style {
+  height: 20px;
+  width: 20px;
+}
+
+.content-btns-redes{
+  width: 100%;
+}
+
+.btn-redes {
+  width: 48%;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: $color-white-one;
+  font-weight: 600;
+}
+
+.btn-redes:hover {
+  background: $color-gray-four;
+}
+

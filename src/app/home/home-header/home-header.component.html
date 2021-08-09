@@ -1,0 +1,133 @@
+<header class="header-content-home">
+  <section class="d-flex">
+    <div class="d-flex container-blue flex-column">
+      <div>
+        <h2 class="title-search-header-home mb-3">
+          Busca tu comunidad de interes
+        </h2>
+        <p class="parragraph-header-home">
+          Enterate de las ultimas novedades que tu
+          <span class="color-word-parragraph-header-home">comunidad</span>
+          postea, participa de un
+          <span class="color-word-parragraph-header-home">evento</span> o
+          <span class="color-word-parragraph-header-home">compra</span> tus
+          items favoritos
+        </p>
+      </div>
+      <div class="d-flex h-100 w-100">
+        <div class="d-flex justify-content-end align-items-end w-100">
+          <a
+            [routerLink]="['/crear-comunidad']"
+            target="_blank"
+            class="
+              d-flex
+              btn-create-community
+              justify-content-center
+              align-items-center
+            "
+            >Crear Comunidad</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="
+        d-flex
+        flex-column
+        container-yellow
+        position-relative
+        align-items-center
+      "
+    >
+      <h2 class="title-project-header-home">
+        Participa en grupo y defiende tu proyecto
+      </h2>
+      <div class="d-flex flex-column h-100 w-100">
+        <div class="d-flex justify-content-around w-100 mt-5 mb-3">
+          <div class="d-flex position-relative mt-4">
+            <img src="../../../assets/svg/woman1.svg" alt="icono de mujer" />
+            <img
+              class="position-absolute dialog-one"
+              src="../../../assets/svg/burbuja1-icon.svg"
+              alt="icono de una burbuja de texto que dice: ¡ Hola !"
+            />
+          </div>
+          <div>
+            <img
+              src="../../../assets/svg/woman3.svg"
+              alt="icono de mujer con un computador"
+            />
+          </div>
+          <div class="d-flex position-relative mt-4">
+            <img src="../../../assets/svg/boy-2.svg" alt="icono de un niño" />
+            <img
+              class="position-absolute dialog-four"
+              src="../../../assets/svg/burbuja4-icon.svg"
+              alt="icono de una burbuja de texto que dice: ¡ siii !"
+            />
+          </div>
+        </div>
+        <div class="d-flex justify-content-around w-100 mt-5">
+          <div class="d-flex position-relative">
+            <img
+              src="../../../assets/svg/woman2.svg"
+              alt="icono de una mujer"
+            />
+            <img
+              class="position-absolute dialog-two"
+              src="../../../assets/svg/burbuja2-icon.svg"
+              alt="icono de una burbuja de texto que dice: ¿Como estan?"
+            />
+          </div>
+          <div class="d-flex position-relative">
+            <img src="../../../assets/svg/boy-1.svg" alt="icono de un niño" />
+            <img
+              class="position-absolute dialog-three"
+              src="../../../assets/svg/burbuja3-icon.svg"
+              alt="icono de una burbuja de texto que dice: ¿Listos para
+            el proyecto?"
+            />
+          </div>
+        </div>
+        <div class="d-flex justify-content-end align-items-end w-100 h-100">
+          <a
+            [routerLink]="['/eventos']"
+            class="
+              d-flex
+              btn-join-event
+              justify-content-center
+              align-items-center
+            "
+            >Participar en un evento</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="d-flex my-4 justify-content-around section-cards-header">
+    <div
+      *ngFor="let cards of dateOfCards"
+      class="
+        d-flex
+        flex-column
+        content-cards-header
+        align-items-center
+        justify-content-around
+      "
+    >
+      <h3 class="title-cards-header">{{ cards.title }}</h3>
+      <img src="{{ cards.image }}" alt="" />
+      <a
+        routerLink="{{ cards.link }}"
+        class="
+          d-flex
+          btn-cards-header
+          justify-content-center
+          align-items-center
+        "
+      >
+        Descubrir
+      </a>
+    </div>
+  </section>
+</header>

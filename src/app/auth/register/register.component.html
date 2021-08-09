@@ -1,0 +1,305 @@
+<div
+  class="
+    d-flex
+    content-progress-information
+    mb-3
+    align-items-center
+    justify-content-center
+  "
+>
+  <div class="d-flex flex-column align-items-center">
+    <div
+      [ngClass]="{
+        'content-circle-progress-register': step == 1,
+        'content-circle-progress-register-sucess': step == 2 || step == 3,
+        'justify-content-center': true,
+        'd-flex': true,
+        'align-items-center': true
+      }"
+    >
+      <img
+        *ngIf="step == 1"
+        src="../../../assets/svg/icon-information.svg"
+        alt="Icono datos básicos"
+      />
+      <img
+        *ngIf="step == 2 || step == 3"
+        src="../../../assets/svg/check.svg"
+        alt="Icono datos básicos"
+      />
+    </div>
+    <p class="title-progress-register">Datos básicos</p>
+    <div
+      [ngClass]="{
+        'content-mini-title-progress-register': step == 1,
+        'content-mini-title-progress-register-two': step == 2 || step == 3,
+        'd-flex': true,
+        'justify-content-center': true,
+        'align-items-center': true
+      }"
+    >
+      <p class="mini-title-progress-register">
+        {{ step == 2 || step == 3 ? "Completado" : "En progreso" }}
+      </p>
+    </div>
+  </div>
+  <div
+    [ngClass]="{
+      'line-progress': step == 1,
+      'line-progress-sucess': step == 2 || step == 3
+    }"
+  ></div>
+  <div class="d-flex flex-column align-items-center">
+    <div
+      [ngClass]="{
+        'content-circle-progress-register': step == 1 || step == 2,
+        'content-circle-progress-register-sucess': step == 3,
+        'justify-content-center': true,
+        'd-flex': true,
+        'align-items-center': true
+      }"
+    >
+      <img
+        *ngIf="step == 1 || step == 2"
+        src="../../../assets/svg/icon-pass.svg"
+        alt="Icono contraseña"
+      />
+      <img
+        *ngIf="step == 3"
+        src="../../../assets/svg/check.svg"
+        alt="Icono check"
+      />
+    </div>
+    <p class="title-progress-register">Contraseña</p>
+    <div
+      [ngClass]="{
+        'content-mini-title-progress-register': step == 1 || step == 2,
+        'd-flex': true,
+        'justify-content-center': true,
+        'align-items-center': true,
+        'content-mini-title-progress-register-two': step == 3
+      }"
+    >
+      <p class="mini-title-progress-register">
+        {{ step == 3 ? "Completado" : "En progreso" }}
+      </p>
+    </div>
+  </div>
+  <div
+    [ngClass]="{
+      'line-progress': step == 1 || step == 2,
+      'line-progress-sucess': step == 3
+    }"
+  ></div>
+  <div class="d-flex flex-column align-items-center">
+    <div
+      class="
+        content-circle-progress-register
+        justify-content-center
+        d-flex
+        align-items-center
+      "
+    >
+      <img
+        src="../../../assets/svg/icon-area.svg"
+        alt="Icono área de interes"
+      />
+    </div>
+    <p class="title-progress-register">Áreas de interes</p>
+    <div
+      class="
+        content-mini-title-progress-register
+        d-flex
+        justify-content-center
+        align-items-center
+      "
+    >
+      <p class="mini-title-progress-register">En progreso</p>
+    </div>
+  </div>
+</div>
+
+<form class="form-style" [formGroup]="multistep" (ngSubmit)="submit()">
+  <div class="d-flex position-absolute content-btns-login">
+    <a
+      routerLink="/auth/iniciar-sesion"
+      class="btn-login d-flex justify-content-center align-items-center"
+      >Iniciar Sesión</a
+    >
+    <div
+      class="
+        d-flex
+        flex-column
+        justify-content-around
+        align-items-center
+        position-absolute
+        content-decorator
+      "
+    >
+      <div class="line-division-two"></div>
+      <div class="decorator-small"></div>
+      <div class="line-division-two"></div>
+    </div>
+    <a
+      routerLink="/auth/registrarse"
+      class="btn-register d-flex justify-content-center align-items-center"
+      >Registrarse</a
+    >
+  </div>
+  <div class="line-division"></div>
+
+  <div
+    class="
+      d-flex
+      flex-column
+      justify-content-center
+      content-inputs-login
+      position-relative
+    "
+    *ngIf="step == 1"
+    formGroupName="userDetails"
+  >
+    <label for="" class="d-flex flex-column style-title-login"
+      >Nick
+      <span
+        class="text-error"
+        *ngIf="submitted && userDetails.nick.errors?.required"
+        >Por favor llenar este campo</span
+      >
+      <input
+        class="input-style-input"
+        type="text"
+        autocomplete="off"
+        formControlName="nick"
+      />
+    </label>
+    <label for="" class="d-flex flex-column mt-3 style-title-login"
+      >Correo
+      <input
+        class="input-style-input"
+        type="email"
+        autocomplete="off"
+        formControlName="email"
+      />
+    </label>
+
+    <p class="style-title-login mt-3 mb-2">O usa tus redes</p>
+    <div class="d-flex content-btns-redes justify-content-between">
+      <button class="btn-redes">
+        <img src="../../../assets/svg/Facebook2.svg" alt="Icono Facebook" />
+        Facebook
+      </button>
+      <button class="btn-redes">
+        <img src="../../../assets/svg/Google.svg" alt="Icono Google" /> Google
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="
+      d-flex
+      flex-column
+      justify-content-center
+      content-inputs-login
+      position-relative
+    "
+    *ngIf="step == 2"
+    formGroupName="userPass"
+  >
+    <label for="" class="d-flex flex-column style-title-login"
+      >Contraseña
+      <input
+        class="input-style-input"
+        type="text"
+        autocomplete="off"
+        formControlName="pass"
+      />
+    </label>
+    <label for="" class="d-flex flex-column mt-3 style-title-login"
+      >Repita la contraseña
+      <input
+        class="input-style-input"
+        type="email"
+        autocomplete="off"
+        formControlName="passRepeat"
+      />
+    </label>
+  </div>
+
+  <div
+    class="
+      d-flex
+      flex-column
+      justify-content-center
+      content-inputs-login
+      position-relative
+    "
+    *ngIf="step == 3"
+    formGroupName="userAreaOfInterest"
+  >
+    <select
+      name=""
+      #selectArea
+      class="input-style-input"
+      formControlName="areaOfInterest"
+    >
+      <option
+        #optionSelect
+        *ngFor="let area of areaOfInterest; let i = index"
+        [value]="area.id"
+        [disabled]="i == 0"
+      >
+        {{ area.name }}
+      </option>
+    </select>
+    <div class="d-flex flex-wrap content-interesting-area w-100 mt-3 px-2 py-2">
+      <div
+        *ngFor="let area of selectAreaOfInterest"
+        class="d-flex content-area-selected mx-1"
+      >
+        <p
+          (click)="removeArea(area)"
+          class="
+            area-select-style
+            d-flex
+            justify-content-center
+            align-items-center
+            h-100
+          "
+        >
+          {{ area.name }}
+          <span class="h-100 d-flex align-items-start svg-close-input"
+            ><svg
+              class="svg-close-input"
+              width="14"
+              height="14"
+              viewBox="0 0 10 10"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.125 0C2.437 0 0.25 2.187 0.25 4.875C0.25 7.563 2.437 9.75 5.125 9.75C7.813 9.75 10 7.563 10 4.875C10 2.187 7.813 0 5.125 0ZM5.125 0.75C7.40762 0.75 9.25 2.59238 9.25 4.875C9.25 7.15762 7.40762 9 5.125 9C2.84238 9 1 7.15762 1 4.875C1 2.59238 2.84238 0.75 5.125 0.75ZM3.7075 2.9175L3.1675 3.4575L4.5865 4.875L3.16825 6.2925L3.70825 6.8325L5.125 5.41388L6.5425 6.83137L7.0825 6.2925L5.66388 4.875L7.08137 3.4575L6.5425 2.9175L5.125 4.3365L3.7075 2.91825V2.9175Z"
+              />
+            </svg>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-end w-100">
+    <button
+      class="btn-back me-3"
+      *ngIf="step != 1 && step != 4"
+      (click)="previous()"
+      type="button"
+    >
+      Atras
+    </button>
+    <button type="submit" class="btn-next" *ngIf="step != 3 && step != 4">
+      Siguiente
+    </button>
+    <button type="submit" class="btn-next" *ngIf="step == 3">
+      Registrarse
+    </button>
+  </div>
+</form>

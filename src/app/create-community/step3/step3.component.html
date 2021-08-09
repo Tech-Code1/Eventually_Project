@@ -1,0 +1,195 @@
+<main class="d-flex main-basic-data-section-step-one">
+  <div
+    class="
+      d-flex
+      flex-column
+      content-lateral-section-last-details
+      align-items-center
+    "
+  >
+    <img
+      class="img-basic-data"
+      src="./../../../assets/svg/Ultimos detalles.svg"
+      alt="icono datos básicos"
+    />
+    <p class="basic-data-title mt-5">Ultimos detalles</p>
+  </div>
+  <section
+    class="
+      d-flex
+      flex-column
+      content-basic-data-section-step-one
+      align-items-center
+    "
+  >
+    <div
+      class="
+        d-flex
+        position-relative
+        align-items-center
+        progress-bar-create-community
+      "
+    >
+      <div
+        class="
+          d-flex
+          content-number-global
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          1
+        </div>
+      </div>
+      <div
+        class="d-flex black-content justify-content-center align-items-center"
+      >
+        <p class="subtitle-step-form-create-community">Datos</p>
+      </div>
+      <div
+        class="
+          d-flex
+          content-number-global-two
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          2
+        </div>
+      </div>
+      <div
+        class="d-flex black-content justify-content-center align-items-center"
+      >
+        <p class="subtitle-step-form-create-community">Conociendote</p>
+      </div>
+      <div
+        class="
+          d-flex
+          content-number-global-three
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          3
+        </div>
+      </div>
+      <div
+        class="
+          d-flex
+          black-content-two
+          justify-content-center
+          align-items-center
+        "
+      >
+        <p class="subtitle-step-form-create-community">Detalles</p>
+      </div>
+    </div>
+    <form (ngSubmit)="onSubmit()" [formGroup]="stepThree" action="">
+      <div class="d-flex flex-column align-items-center">
+        <p class="title-logo mb-1">Logo</p>
+        <div
+          class="
+            d-flex
+            justify-content-center
+            align-items-center
+            content-logo-community
+          "
+          (click)="logoInput.click()"
+        >
+        <div *ngIf="images['logo']" class="img-preview">
+          <img
+            loading="lazy"
+            class="previsualizacion"
+            [src]="images['logo']"
+          />
+        </div>
+        <input
+        #logoInput
+        hidden
+        (change)="showImgPreview($event, 'logo')"
+        type="file"
+      />
+          <img
+           *ngIf="!images['logo']"
+            src="../../../assets/svg/Avatar-decorator.svg"
+            alt="Decoración plantilla avatar"
+          />
+        </div>
+      </div>
+      <p class="title-social-media mt-5 mb-1">Banner</p>
+      <div
+        class="
+          d-flex
+          justify-content-center
+          align-items-center
+          content-banner-community
+        "
+        (click)="bannerInput.click()"
+      >
+        <div *ngIf="images['banner']" class="img-preview">
+          <img
+            loading="lazy"
+            class="previsualizacion"
+            [src]="images['banner']"
+          />
+        </div>
+        <input
+          #bannerInput
+          hidden
+          (change)="showImgPreview($event, 'banner')"
+          type="file"
+        />
+        <img
+          *ngIf="!images['banner']"
+          src="../../../assets/svg/banner-decorator.svg"
+          alt="Decoración plantilla banner"
+        />
+      </div>
+      <div class="d-flex w-100 justify-content-between">
+        <button
+          type="button"
+          [routerLink]="['/crear-comunidad/conociendo-la-comunidad']"
+          class="btn-back-form-community-knowing-community position-relative"
+        >
+          Atras
+        </button>
+        <button
+          type="submit"
+          class="btn-next-form-community-knowing-community position-relative"
+        >
+          Crear comunidad
+        </button>
+      </div>
+    </form>
+  </section>
+</main>

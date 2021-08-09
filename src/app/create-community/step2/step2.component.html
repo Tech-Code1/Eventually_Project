@@ -1,0 +1,224 @@
+<main class="d-flex main-basic-data-section-step-one">
+  <div
+    class="
+      d-flex
+      flex-column
+      content-lateral-section-knowing-community
+      align-items-center
+    "
+  >
+    <img
+      class="img-basic-data"
+      src="./../../../assets/svg/conociendo-comunidad.svg"
+      alt="icono datos básicos"
+    />
+    <p class="basic-data-title mt-5">Conociendo la comunidad</p>
+  </div>
+  <section
+    class="
+      d-flex
+      flex-column
+      content-basic-data-section-step-one
+      align-items-center
+    "
+  >
+    <div
+      class="
+        d-flex
+        position-relative
+        align-items-center
+        progress-bar-create-community
+      "
+    >
+      <div
+        class="
+          d-flex
+          content-number-global
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          1
+        </div>
+      </div>
+      <div
+        class="d-flex black-content justify-content-center align-items-center"
+      >
+        <p class="subtitle-step-form-create-community">Datos</p>
+      </div>
+      <div
+        class="
+          d-flex
+          content-number-global-two
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          2
+        </div>
+      </div>
+      <div
+        class="d-flex black-content justify-content-center align-items-center"
+      >
+        <p class="subtitle-step-form-create-community">Conociendote</p>
+      </div>
+      <div
+        class="
+          d-flex
+          content-number-global-three
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          3
+        </div>
+      </div>
+      <div
+        class="
+          d-flex
+          black-content-two
+          justify-content-center
+          align-items-center
+        "
+      >
+        <p class="subtitle-step-form-create-community">Detalles</p>
+      </div>
+    </div>
+    <form [formGroup]="stepTwo" (ngSubmit)="onSubmit()">
+      <p class="title-social-media mb-1">Redes sociales</p>
+      <div class="d-flex content-global-inputs-social-media">
+        <div class="d-flex flex-column me-5">
+          <div class="d-flex mb-3">
+            <img
+              class="me-2"
+              src="./../../../assets/svg/social-media-facebook.svg"
+              alt="Icono facebook"
+            />
+            <input
+              formControlName="socialFacebook"
+              type="text"
+              class="input-social-media"
+            />
+          </div>
+          <div class="d-flex mb-3">
+            <img
+              class="me-2"
+              src="./../../../assets/svg/social-media-linkedin.svg"
+              alt="Icono linkedin"
+            />
+            <input
+              formControlName="socialLinkedin"
+              type="text"
+              class="input-social-media"
+            />
+          </div>
+          <div class="d-flex">
+            <img
+              class="me-2"
+              src="./../../../assets/svg/social-media-instagram.svg"
+              alt="Icono instagram"
+            />
+            <input
+              formControlName="socialInstagram"
+              type="text"
+              class="input-social-media"
+            />
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="d-flex mb-3">
+            <img
+              class="me-2"
+              src="./../../../assets/svg/social-media-github.svg"
+              alt="Icono github"
+            />
+            <input
+              formControlName="socialGithub"
+              type="text"
+              class="input-social-media"
+            />
+          </div>
+          <div class="d-flex mb-3">
+            <img
+              class="me-2"
+              src="./../../../assets/svg/social-media-twitter.svg"
+              alt="Icono twitter"
+            />
+            <input
+              formControlName="socialTwitter"
+              type="text"
+              class="input-social-media"
+            />
+          </div>
+          <div class="d-flex">
+            <img
+              class="me-2"
+              src="./../../../assets/svg/social-media-discord.svg"
+              alt="Icono Discord"
+            />
+            <input
+              formControlName="socialDiscord"
+              type="text"
+              class="input-social-media"
+            />
+          </div>
+        </div>
+      </div>
+      <p class="title-social-media mt-5 mb-1">Breve descripción</p>
+      <textarea
+        formControlName="descriptionCommunity"
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Escribe una descripción corta..."
+        class="textarea-knowing-community"
+      ></textarea>
+      <div class="d-flex w-100 justify-content-between">
+        <button
+          type="button"
+          class="btn-back-form-community-knowing-community position-relative"
+          [routerLink]="['/crear-comunidad/datos-basicos']"
+        >
+          Atras
+        </button>
+        <button
+          type="submit"
+          class="btn-next-form-community-knowing-community position-relative"
+        >
+          Siguiente
+        </button>
+      </div>
+    </form>
+  </section>
+</main>

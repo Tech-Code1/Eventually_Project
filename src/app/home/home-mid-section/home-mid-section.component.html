@@ -1,0 +1,40 @@
+<section class="d-flex flex-column content-mid-section justify-content-between">
+  <div>
+    <h2 class="title-principal-mid-section">
+      Sistema novedoso para trabajar en grupo
+    </h2>
+    <p class="paragraph-principal-mid-section mt-3">
+      Aprende los temas de tu interes participando en eventos de cada una de tus
+      comunidades favoritas; conoce personas de todo el mundo que comparten tu
+      misma pasión, aprende a travez de proyectos y gana premios
+    </p>
+  </div>
+  <section class="d-flex justify-content-between">
+    <div
+      *ngFor="let cards of dateSteps"
+      class="d-flex flex-column justify-content-center"
+    >
+      <div class="d-flex">
+        <div
+          class="
+            d-flex
+            content-number-step-mid-section
+            justify-content-center
+            align-items-center
+            me-4
+          "
+        >
+          <span class="number-step-mid-section">{{ cards.number }}</span>
+        </div>
+        <p class="sub-title-step-mid-section">{{ cards.title }}</p>
+      </div>
+      <img class="image-step-mid-section" src="{{ cards.image }}" alt="" />
+    </div>
+  </section>
+  <button
+    [routerLink]="['/auth/registrarse']"
+    class="btn-start-step-mid-section"
+  >
+    Empezar
+  </button>
+</section>

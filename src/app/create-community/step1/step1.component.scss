@@ -1,0 +1,163 @@
+@import "../../../assets/theme.scss";
+
+
+.content-lateral-section-basic-data {
+  background: $accent-color-two;
+  height: 100vh;
+  width: 36%;
+}
+
+.basic-data-title {
+  color: $color-white-two;
+  font-size: 28px;
+  font-family: $title;
+  font-weight: bold;
+}
+
+.img-basic-data {
+  height: 200px;
+  width: 200px;
+  margin-top: 200px;
+}
+
+.black-content,
+.black-content-two {
+  width: 242px;
+  background: $color-dark-one;
+  height: 50px;
+}
+
+.black-content-two {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.progress-bar-create-community {
+  margin-top: 100px;
+}
+
+.content-number-global {
+  left: -22.5px;
+}
+
+.content-number-global-two {
+  left: 219.5px;
+}
+
+.content-number-global-three {
+  left: 461.5px;
+}
+
+.content-number-global,
+.content-number-global-two,
+.content-number-global-three {
+  height: 55px;
+  width: 55px;
+  background: $color-white-two;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+
+
+.content-number {
+  height: 45px;
+  width: 45px;
+  background: $soft-color-orange-two;
+  border-radius: 50%;
+  border: 2px solid $secondary-color-one;
+}
+
+
+.number-one {
+  color: $secondary-color-one;
+}
+
+.subtitle-step-form-create-community {
+  color: $color-white-two;
+}
+
+.number-one,
+.subtitle-step-form-create-community {
+  font-family: $title;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+}
+
+.input-name-community,
+.input-area-community,
+.input-other-area-community,
+.input-email-community {
+  background: $soft-color-blue;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  outline: none;
+  padding: 0 8px;
+}
+
+.input-area-community,
+.input-other-area-community {
+  width: 420px;
+}
+
+.input-name-community,
+.content-areas-inputs-community,
+.input-email-community {
+  width: 937px
+}
+
+.input-name-community:focus,
+.input-area-community:focus,
+.input-other-area-community:focus,
+.input-email-community:focus {
+  border-bottom: 3px solid #63A4FF;
+  border-radius: 0 0 5px 5px;
+}
+
+.label-name-community {
+  margin-top: 120px;
+}
+
+.label-email-community,
+.label-other-area-community,
+.label-area-community,
+.label-name-community {
+  font-size: 16px;
+  font-family: $title;
+  font-weight: 700;
+}
+
+.btn-next-form-community {
+  margin-top: 250px;
+}
+
+.btn-next-form-community-knowing-community {
+  margin-top: 50px;
+}
+
+.btn-next-form-community,
+.btn-next-form-community-knowing-community {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: $title;
+  font-weight: bold;
+  height: 50px;
+  padding: 0 16px;
+  background: $primary-color-two;
+  color: $color-white-two;
+}
+
+.btn-next-form-community:hover,
+.btn-next-form-community-knowing-community:hover {
+  background: $primary-color-one;
+ }
+
+ .content-basic-data-section-step-one {
+   width: 64%;
+ }

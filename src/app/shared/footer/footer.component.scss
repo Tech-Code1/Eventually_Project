@@ -1,0 +1,27 @@
+@import "../../../assets/theme.scss";
+
+.style-footer {
+  background: $color-dark-one;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  z-index: 7;
+  padding: 0 24px;
+}
+
+.footer-titles-styles {
+  font-family: $title;
+  font-weight: bold;
+  font-size: 16px;
+  color: $color-white-two;
+}
+
+.link-footer {
+  color: $secondary-color-three;
+  text-decoration: none;
+}
+
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

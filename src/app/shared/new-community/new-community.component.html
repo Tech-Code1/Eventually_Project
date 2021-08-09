@@ -1,0 +1,23 @@
+<div *ngIf="comunity">
+  <header class="header-card-community d-flex px-3 align-items-center">
+    <img
+      class="me-4"
+      style="max-height: 100%;"
+      [src]="comunity.logo"
+      alt="logo"
+    />
+    <p class="title-card-new-community">{{comunity.name}}</p>
+  </header>
+  <body class="d-flex flex-column body-card-community justify-content-between">
+    <div
+      class="d-flex mb-3 align-items-center content-subtitle-card-new-community"
+    >
+      <span class="me-2 decorate-card-new-community"></span>
+      <h3 class="subtitle-card-new-community">Sobre nuestra comunidad</h3>
+    </div>
+    <p class="parragraph-card-new-community">
+     {{comunity.description}}
+    </p>
+    <button class="btn-visit-new-community">Visitar Comunidad</button>
+  </body>
+</div>

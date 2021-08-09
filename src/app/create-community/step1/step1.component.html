@@ -1,0 +1,178 @@
+<main class="d-flex main-basic-data-section-step-one">
+  <div
+    class="
+      d-flex
+      flex-column
+      content-lateral-section-basic-data
+      align-items-center
+    "
+  >
+    <img
+      class="img-basic-data"
+      src="./../../../assets/svg/datos-basicos.svg"
+      alt="icono datos básicos"
+    />
+    <p class="basic-data-title mt-5">Datos básicos de la comunidad</p>
+  </div>
+  <section
+    class="
+      d-flex
+      flex-column
+      content-basic-data-section-step-one
+      align-items-center
+    "
+  >
+    <div
+      class="
+        d-flex
+        position-relative
+        align-items-center
+        progress-bar-create-community
+      "
+    >
+      <div
+        class="
+          d-flex
+          content-number-global
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          1
+        </div>
+      </div>
+      <div
+        class="d-flex black-content justify-content-center align-items-center"
+      >
+        <p class="subtitle-step-form-create-community">Datos</p>
+      </div>
+      <div
+        class="
+          d-flex
+          content-number-global-two
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          2
+        </div>
+      </div>
+      <div
+        class="d-flex black-content justify-content-center align-items-center"
+      >
+        <p class="subtitle-step-form-create-community">Conociendote</p>
+      </div>
+      <div
+        class="
+          d-flex
+          content-number-global-three
+          position-absolute
+          justify-content-center
+          align-items-center
+        "
+      >
+        <div
+          class="
+            d-flex
+            content-number
+            justify-content-center
+            align-items-center
+            number-one
+          "
+        >
+          3
+        </div>
+      </div>
+      <div
+        class="
+          d-flex
+          black-content-two
+          justify-content-center
+          align-items-center
+        "
+      >
+        <p class="subtitle-step-form-create-community">Detalles</p>
+      </div>
+    </div>
+    <form (ngSubmit)="onSubmit()" [formGroup]="stepOne" action="">
+      <label for="" class="d-flex flex-column label-name-community"
+        >Nombre de la comunidad
+        <input
+          formControlName="nameCommunity"
+          type="text"
+          class="input-name-community"
+        />
+      </label>
+      <div
+        class="
+          d-flex
+          justify-content-between
+          content-areas-inputs-community
+          mt-5
+        "
+      >
+        <label for="" class="w-100 label-area-community"
+          >Aréa de enfoque
+          <select
+            formControlName="areaCommunity"
+            type="text"
+            class="input-area-community"
+          >
+            <option value="Seleccionar aréa de enfoque" selected disabled>
+              Seleccionar aréa de enfoque
+            </option>
+            <option value="1">Programación</option>
+            <option value="2">Dibujo digital</option>
+            <option value="3">Dibujo tradicional</option>
+            <option value="4">Animación 3D</option>
+            <option value="5">Modelado 3D</option>
+          </select>
+        </label>
+        <label for="" class="label-other-area-community"
+          >Otra, ¿Cual?
+          <input
+            formControlName="areaOtherCommunity"
+            type="text "
+            class="input-other-area-community"
+          />
+        </label>
+      </div>
+      <label for="" class="mt-5 d-flex flex-column label-email-community">
+        Correo de la comunidad
+        <input
+          formControlName="emailCommunity"
+          type="email"
+          class="input-email-community"
+        />
+      </label>
+      <div class="d-flex w-100 justify-content-end">
+        <button
+          type="submit"
+          class="btn-next-form-community position-relative"
+        >
+          Siguiente
+        </button>
+      </div>
+    </form>
+  </section>
+</main>

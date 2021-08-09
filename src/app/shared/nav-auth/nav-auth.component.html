@@ -1,0 +1,60 @@
+<nav class="d-flex nav-auth-style justify-content-between align-items-center">
+  <div class="d-flex align-items-center">
+    <img src="../../../assets/svg/logo.svg" alt="Logo principal de la página" />
+    <p class="title-logo ms-2">Eventually</p>
+  </div>
+  <ul class="d-flex">
+    <div
+      class="d-flex flex-column me-4 content-title-nav"
+      routerLinkActive="activated"
+    >
+      <li [routerLink]="['/inicio']" class="style-title-nav">Inicio</li>
+      <div class="line-menu"></div>
+    </div>
+    <div
+      class="d-flex flex-column me-4 content-title-nav"
+      routerLinkActive="activated"
+    >
+      <li [routerLink]="['/comunidades']" class="style-title-nav">
+        Comunidades
+      </li>
+      <div class="line-menu"></div>
+    </div>
+    <div
+      class="d-flex flex-column me-4 content-title-nav"
+      routerLinkActive="activated"
+    >
+      <li [routerLink]="['/talleres']" class="style-title-nav">Talleres</li>
+      <div class="line-menu"></div>
+    </div>
+    <div
+      class="d-flex flex-column content-title-nav me-4"
+      routerLinkActive="activated"
+    >
+      <li [routerLink]="['/tienda']" class="style-title-nav">Tienda</li>
+      <div class="line-menu"></div>
+    </div>
+    <div
+      class="d-flex flex-column content-title-nav"
+      routerLinkActive="activated"
+    >
+      <li [routerLink]="['/eventos']" class="style-title-nav">Eventos</li>
+      <div class="line-menu"></div>
+    </div>
+  </ul>
+  <div>
+    <ng-container *ngIf="!authService.isLoggedIn(); else logout">
+      <button [routerLink]="['/auth/iniciar-sesion']" class="btn-ghost me-2">
+        Login
+      </button>
+      <button [routerLink]="['/auth/registrarse']" class="btn-solid">
+        Registrarse
+      </button>
+    </ng-container>
+    <ng-template #logout>
+      <button (click)="authService.logout()" class="btn-solid">
+        Cerrar sesión
+      </button>
+    </ng-template>
+  </div>
+</nav>

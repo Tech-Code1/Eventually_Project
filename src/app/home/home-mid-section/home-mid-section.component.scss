@@ -1,0 +1,64 @@
+@import "../../../assets/theme.scss";
+
+.content-mid-section {
+  background: $color-dark-two;
+  height: 762px;
+  width: 100%;
+  padding: 24px 16px;
+}
+
+.title-principal-mid-section {
+  font-family: $title;
+  color: $color-white-two;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.paragraph-principal-mid-section {
+  font-family: $content;
+  color: $color-white-two;
+  font-size: 20px;
+}
+
+.content-number-step-mid-section {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  background: $color-white-two;
+}
+
+.number-step-mid-section {
+  color: $accent-color-seven;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: $title;
+}
+
+.sub-title-step-mid-section {
+  color: $color-white-two;
+  font-family: $content;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.image-step-mid-section {
+  height: 250px;
+}
+
+.btn-start-step-mid-section {
+  background: $primary-color-two;
+  outline: none;
+  border: none;
+  color: $color-white-two;
+  font-weight: bold;
+  font-family: $title;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.btn-start-step-mid-section:hover {
+  background: $primary-color-one;
+}
+

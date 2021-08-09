@@ -1,0 +1,61 @@
+@import "../../../assets/theme.scss";
+@import "../step1/step1.component.scss";
+
+.content-lateral-section-knowing-community {
+  background: $accent-color-ten;
+  height: 100vmin;
+  width: 36%;
+
+}
+
+.input-social-media {
+  background: $soft-color-blue;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  outline: none;
+  padding: 0 8px;
+  width: 380px;
+}
+
+.input-social-media:focus {
+  border-bottom: 3px solid #63A4FF;
+  border-radius: 0 0 5px 5px;
+}
+
+.title-social-media {
+  margin-top: 120px;
+  font-size: 16px;
+  font-family: $title;
+  font-weight: 700;
+}
+
+.btn-back-form-community-knowing-community {
+  border: 2px solid $accent-color-eight;
+  outline: none;
+  border-radius: 5px;
+  font-family: $title;
+  font-weight: bold;
+  height: 50px;
+  padding: 0 16px;
+  background: transparent;
+  color: $accent-color-eight;
+  margin-top: 50px;
+}
+
+.btn-back-form-community-knowing-community:hover {
+  border: 2px solid $accent-color-nine;
+  color: $accent-color-nine;
+}
+
+.textarea-knowing-community {
+  height: 180px;
+  width: 100%;
+  background: $soft-color-blue;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 8px;
+  outline: none;
+  font-family: $content;
+  font-size: 16px;
+}

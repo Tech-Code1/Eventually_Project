@@ -1,0 +1,80 @@
+<form
+  (ngSubmit)="login()"
+  [formGroup]="loginFormGroup"
+  action=""
+  class="form-style"
+>
+  <div class="d-flex position-absolute content-btns-login">
+    <a
+      routerLink="/auth/iniciar-sesion"
+      class="btn-login d-flex justify-content-center align-items-center"
+      >Iniciar Sesión</a
+    >
+    <div
+      class="
+        d-flex
+        flex-column
+        justify-content-around
+        align-items-center
+        position-absolute
+        content-decorator
+      "
+    >
+      <div class="line-division-two"></div>
+      <div class="decorator-small"></div>
+      <div class="line-division-two"></div>
+    </div>
+    <a
+      routerLink="/auth/registrarse"
+      class="btn-register d-flex justify-content-center align-items-center"
+      >Registrarse</a
+    >
+  </div>
+  <div class="line-division"></div>
+  <div
+    class="
+      d-flex
+      flex-column
+      justify-content-center
+      content-inputs-login
+      position-relative
+    "
+  >
+    <label for="" class="d-flex flex-column style-title-login"
+      >Correo
+      <input
+        formControlName="email"
+        class="input-style-input"
+        type="email"
+        autocomplete="off"
+      />
+    </label>
+    <label for="" class="d-flex flex-column mt-3 style-title-login"
+      >Contraseña
+      <input
+        formControlName="password"
+        class="input-style-input"
+        type="password"
+        autocomplete="off"
+      />
+    </label>
+    <div class="d-flex justify-content-around mt-3">
+      <label for="" class="style-title-login d-flex align-items-center">
+        <input type="checkbox" class="checkbox-style me-2" />Mantenerme
+        conectado
+      </label>
+      <a class="style-title-login-two">¿Olvidaste su contraseña?</a>
+    </div>
+    <p class="style-title-login mt-3 mb-2">O usa tus redes</p>
+    <div class="d-flex content-btns-redes justify-content-between">
+      <button class="btn-redes">
+        <img src="../../../assets/svg/Facebook2.svg" alt="Icono Facebook" />
+        Facebook
+      </button>
+      <button class="btn-redes">
+        <img src="../../../assets/svg/Google.svg" alt="Icono Google" /> Google
+      </button>
+    </div>
+  </div>
+  <button type="submit" class="btn-start-sesion">Iniciar Sesión</button>
+</form>

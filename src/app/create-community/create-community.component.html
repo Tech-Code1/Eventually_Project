@@ -1,0 +1,49 @@
+<main
+  class="d-flex justify-content-around align-items-center main-content-plans"
+>
+  <div
+    *ngFor="let plan of data; let i = index"
+    class="container-plans-community d-flex flex-column align-items-center"
+  >
+    <div class="d-flex flex-column align-items-center">
+      <h2
+        [ngClass]="{
+          'color-title-plan-community-one': plan.name === 'Plan Básico',
+          'color-title-plan-community-two': plan.name === 'Plan Medio',
+          'color-title-plan-community-three': plan.name === 'Plan Pro'
+        }"
+      >
+        {{ plan.name }}
+      </h2>
+      <p
+        [ngClass]="{
+          'color-title-plan-price-community-one':
+            plan.price === 'Plan gratuito',
+          'color-title-plan-price-community-two':
+            plan.price === 'Suscripción 10 USD / mes',
+          'color-title-plan-price-community-three':
+            plan.price === 'Suscripción 25 USD / mes'
+        }"
+      >
+        {{ plan.price }}
+      </p>
+    </div>
+    <div class="mt-5">
+      <li *ngFor="let benefit of plan.benefits" class="mb-3 benefits-titles">
+        {{ benefit }}
+      </li>
+    </div>
+    <div class="d-flex justify-content-end align-items-end h-100 w-100">
+      <button
+        [routerLink]="['/crear-comunidad/datos-basicos']"
+        [ngClass]="{
+          'color-button-plan-community-one': plan.button == 'button1',
+          'color-button-plan-community-two': plan.button == 'button2',
+          'color-button-plan-community-three': plan.button == 'button3'
+        }"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</main>
